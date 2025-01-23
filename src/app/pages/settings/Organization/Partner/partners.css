@@ -1,0 +1,37 @@
+ /* add karthik save button width style */
+ 
+ .cancelsave-button {
+    text-transform: capitalize !important;
+    padding: 6.5px 20px !important;
+    color: #00bfff !important;
+    background-color: #f5f7fa !important;
+    border: 1px solid #f5f7fa !important;
+    height: 34px;   /* add new */
+    width: 99px; /* karthik add new */
+  }
+  
+  .cancelsave-button:hover {
+    color: #ffffff !important;
+    background-color: #00bfff !important;
+    border: 1px solid #00bfff !important;
+    border-top-right-radius: 0px !important;
+    text-transform: capitalize !important;
+    border-bottom-right-radius: 0px !important;
+  }
+
+  /* karthik add */
+
+.search-select1 div {
+  font-size: 14px !important;
+  height: 34px !important;
+  line-height: 18px !important;
+  padding: 0px !important;
+}
+
+.Mui-selected {
+  background-color: #f3f1f1b4 !important;
+  box-shadow: 1px 1px 5px 0px #d6dedf !important;
+}
+.hiddenRow {
+  padding: 0 !important;
+}

@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial Nova";
+}
+
+.grid-item {
+  border: none !important;
+  box-shadow: none !important;
+  width: 100%;
+  background-color: transparent !important;
+}
+
+.input-box label {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  height: 20px !important;
+  line-height: 0 !important;
+  margin-left: 2px;
+  margin-top: -5px !important;
+  padding-top: 10px !important;
+  background-color: #ffffff !important;
+}
+
+.css-7iuw6a-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  z-index: 1000 !important;
+
+}
+
+
+
+.fgt-pwd-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0px;
+}
+
+.fgt-pwd-text a {
+  cursor: pointer !important;
+  color: #00bfff;
+  font-size: 14px !important;
+}
+
+.login-key-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.Login-form {
+  width: "480px" !important;
+}
+
+.checkbox-label span {
+  font-size: 14px !important;
+}
+
+
+/* draw a line in login image */
+.center-logo {
+  position: relative;
+}
+
+.center-logo .rotate-img {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center-logo .leftTop-line {
+  height: 1px;
+  width: 120px;
+  background-color: #808b96;
+  transform: rotate(50deg);
+  position: absolute;
+  top: -50px;
+  left: -95px;
+}
+
+.center-logo .rightTop-line {
+  height: 1px;
+  width: 120px;
+  background-color: #808b96;
+  transform: rotate(130deg);
+  position: absolute;
+  top: -50px;
+  left: 25px;
+}
+
+.center-logo .rightBottom-line {
+  height: 1px;
+  width: 120px;
+  background-color: #808b96;
+  transform: rotate(-130deg);
+  position: absolute;
+  top: 100px;
+  left: 25px;
+}
+
+.center-logo .leftBottom-line {
+  height: 1px;
+  width: 120px;
+  background-color: #808b96;
+  transform: rotate(-50deg);
+  position: absolute;
+  top: 100px;
+  left: -95px;
+}
+
+/* top line */
+.leftTop-circle {
+  position: relative;
+}
+
+.leftTop-circle .leftTop1-line {
+  height: 1px;
+  width: 60px;
+  background-color: #808b96;
+  transform: rotate(-25deg);
+  position: absolute;
+  top: 45px;
+  left: -55px;
+}
+
+.leftTop-circle .leftBottom1-line {
+  height: 1px;
+  width: 60px;
+  background-color: #808b96;
+  transform: rotate(25deg);
+  position: absolute;
+  top: 0px;
+  left: -55px;
+}
+
+.rightTop-circle {
+  position: relative;
+}
+
+.rightTop-circle .rightTop1-line {
+  height: 1px;
+  width: 60px;
+  background-color: #808b96;
+  transform: rotate(25deg);
+  position: absolute;
+  top: 45px;
+  left: 45px;
+}
+
+.rightTop-circle .rightBottom1-line {
+  height: 1px;
+  width: 60px;
+  background-color: #808b96;
+  transform: rotate(-25deg);
+  position: absolute;
+  top: 0px;
+  left: 45px;
+}
+
+/* bottom line */
+.leftBottom-circle {
+  position: relative;
+}
+
+.leftBottom-circle .leftTop2-line {
+  height: 1px;
+  width: 60px;
+  background-color: #808b96;
+  transform: rotate(-25deg);
+  position: absolute;
+  top: 45px;
+  left: -55px;
+}
+
+.leftBottom-circle .leftBottom2-line {
+  height: 1px;
+  width: 60px;
+  background-color: #808b96;
+  transform: rotate(25deg);
+  position: absolute;
+  top: 0px;
+  left: -55px;
+}
+
+.rightBottom-circle {
+  position: relative;
+}
+
+.rightBottom-circle .rightTop2-line {
+  height: 1px;
+  width: 60px;
+  background-color: #808b96;
+  transform: rotate(25deg);
+  position: absolute;
+  top: 45px;
+  left: 45px;
+}
+
+.rightBottom-circle .rightBottom2-line {
+  height: 1px;
+  width: 60px;
+  background-color: #808b96;
+  transform: rotate(-25deg);
+  position: absolute;
+  top: 0px;
+  left: 45px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Login-form {
+    width: "350px" !important;
+  }
+
+  .responsive-img {
+    width: 42px;
+    height: 42px;
+  }
+
+  /* draw a line in login image */
+  .center-logo {
+    position: relative;
+  }
+
+  .center-logo .leftTop-line {
+    height: 1px;
+    width: 75px;
+    background-color: #808b96;
+    transform: rotate(50deg);
+    position: absolute;
+    top: -30px;
+    left: -60px;
+  }
+
+  .center-logo .rightTop-line {
+    height: 1px;
+    width: 75px;
+    background-color: #808b96;
+    transform: rotate(130deg);
+    position: absolute;
+    top: -30px;
+    left: 28px;
+  }
+
+  .center-logo .rightBottom-line {
+    height: 1px;
+    width: 75px;
+    background-color: #808b96;
+    transform: rotate(-130deg);
+    position: absolute;
+    top: 80px;
+    left: 30px;
+  }
+
+  .center-logo .leftBottom-line {
+    height: 1px;
+    width: 75px;
+    background-color: #808b96;
+    transform: rotate(-50deg);
+    position: absolute;
+    top: 80px;
+    left: -60px;
+  }
+
+  /* top line */
+  .leftTop-circle {
+    position: relative;
+  }
+
+  .leftTop-circle .leftTop1-line {
+    height: 1px;
+    width: 35px;
+    background-color: #808b96;
+    transform: rotate(-25deg);
+    position: absolute;
+    top: 35px;
+    left: -30px;
+  }
+
+  .leftTop-circle .leftBottom1-line {
+    height: 1px;
+    width: 35px;
+    background-color: #808b96;
+    transform: rotate(25deg);
+    position: absolute;
+    top: -5px;
+    left: -30px;
+  }
+
+  .rightTop-circle {
+    position: relative;
+  }
+
+  .rightTop-circle .rightTop1-line {
+    height: 1px;
+    width: 35px;
+    background-color: #808b96;
+    transform: rotate(25deg);
+    position: absolute;
+    top: 35px;
+    left: 25px;
+  }
+
+  .rightTop-circle .rightBottom1-line {
+    height: 1px;
+    width: 35px;
+    background-color: #808b96;
+    transform: rotate(-25deg);
+    position: absolute;
+    top: -5px;
+    left: 25px;
+  }
+
+  /* bottom line */
+  .leftBottom-circle {
+    position: relative;
+  }
+
+  .leftBottom-circle .leftTop2-line {
+    height: 1px;
+    width: 35px;
+    background-color: #808b96;
+    transform: rotate(-25deg);
+    position: absolute;
+    top: 35px;
+    left: -30px;
+  }
+
+  .leftBottom-circle .leftBottom2-line {
+    height: 1px;
+    width: 35px;
+    background-color: #808b96;
+    transform: rotate(25deg);
+    position: absolute;
+    top: -5px;
+    left: -30px;
+  }
+
+  .rightBottom-circle {
+    position: relative;
+  }
+
+  .rightBottom-circle .rightTop2-line {
+    height: 1px;
+    width: 35px;
+    background-color: #808b96;
+    transform: rotate(25deg);
+    position: absolute;
+    top: 35px;
+    left: 25px;
+  }
+
+  .rightBottom-circle .rightBottom2-line {
+    height: 1px;
+    width: 35px;
+    background-color: #808b96;
+    transform: rotate(-25deg);
+    position: absolute;
+    top: -5px;
+    left: 25px;
+  }
+}

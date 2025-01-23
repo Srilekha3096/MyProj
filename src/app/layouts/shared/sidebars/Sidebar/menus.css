@@ -1,0 +1,38 @@
+.menus-sidebar {
+    margin-top: -20px !important;
+}
+
+.sidebar-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-item .sidebar-title {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.sidebar-item .sidebar-content {
+    display: none;
+    padding-left: 20px;
+}
+
+.sidebar-item.open .sidebar-content {
+    display: block;
+}
+
+.sidebar-item.plain {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar-item i {
+    margin-right: 10px;
+}

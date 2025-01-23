@@ -1,0 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/arial-nova');
+
+
+body, p {
+    font-family: 'Arial Nova';
+    /* font-weight: 400;
+    font-size: 12px;     change font-size 14px to 12px */
+}
+
