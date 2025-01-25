@@ -16,7 +16,7 @@ import Div from '@jumbo/shared/Div';
 import { BiEdit, BiSolidFilePdf } from 'react-icons/bi';
 import { MdCalendarToday, MdDelete } from 'react-icons/md';
 import { RiFileExcel2Fill } from 'react-icons/ri';
-import { format } from 'date-fns';
+//import { format } from 'date-fns';
 import RefreshImage from './../../../assets/images/circular.png';
 import ApplyImage from './../../../assets/images/apply.png';
 
@@ -307,16 +307,16 @@ export const ErpDateField = ({ inputValue, handleInputChange, InputProps: parent
             setDateFormat(storedDateFormat);
         }
     }, []);
-    const formatDate = (date, formatString) => {
-        try {
-            return format(new Date(date), formatString);
-        } catch (error) {
-            console.error('Date formatting error:', error);
-            return date;
-        }
-    };
+    // const formatDate = (date, formatString) => {
+    //     try {
+    //         return format(new Date(date), formatString);
+    //     } catch (error) {
+    //         console.error('Date formatting error:', error);
+    //         return date;
+    //     }
+    // };
 
-    const formattedValue = !showDateField && inputValue ? formatDate(inputValue, dateFormat) : inputValue;
+    const formattedValue = !showDateField && inputValue ? "2025" : inputValue;
 
     // Merge default InputProps with those from the parent
     const mergedInputProps = {

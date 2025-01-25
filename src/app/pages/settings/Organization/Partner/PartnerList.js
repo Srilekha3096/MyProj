@@ -22,7 +22,7 @@ import { toast } from "react-toastify";
 import CreatePartner from "./CreatePartner";
 import EditPartnerList from "./EditPartnerList";
 import "./partners.css";
-import { format } from "date-fns";
+//import { format } from "date-fns";
 import { BsArrowDownUp, BsThreeDotsVertical } from "react-icons/bs";
 import PartnerOverview from "./partnerOverview";
 import { DataContext } from "app/pages/settings/Organization/OrganizationStructure";
@@ -646,10 +646,10 @@ const PartnerList = ({ scrollHeight }) => {
                 <TableBody>
                   {PartnerListData?.length > 0 ? PartnerListData?.map((item, index) => {
                     let formattedDate = ""
-                    if (dateFormat !== undefined && dateFormat !== null && dateFormat !== "") {
-                      const date = new Date(item?.Created_Date);
-                      formattedDate = dateFormat && item?.Created_Date && format(date, dateFormat);
-                    }
+                    // if (dateFormat !== undefined && dateFormat !== null && dateFormat !== "") {
+                    //   const date = new Date(item?.Created_Date);
+                    //   formattedDate = dateFormat && item?.Created_Date && format(date, dateFormat);
+                    // }
                     return (
                       <TableRow hover key={index}>
                         <TableCell data-title="Status" sx={{ textAlign: "center" }}>
@@ -666,12 +666,12 @@ const PartnerList = ({ scrollHeight }) => {
                               }} />}
                           />
                         </TableCell>
-                        {
+                        {/* {
                           Date1 && (
                             <TableCell data-title="Date">
                               {formattedDate || item?.Created_Date}
                             </TableCell>)
-                        }
+                        } */}
                         {
                           BU_Id && (
                             <TableCell

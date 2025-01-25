@@ -18,7 +18,7 @@ import {
 import { BASE_URL } from "app/services/auth-services";
 import axios from "axios";
 import { MdClose } from "react-icons/md";
-import { format } from "date-fns";
+//import { format } from "date-fns";
 import HistoryOverview from "app/shared/ReuseComponents/HistoryOverview";
 
 
@@ -166,10 +166,10 @@ const PartnerOverview = ({
                 </Grid>
 
                 <Grid item xs={6.5} md={8} lg={8}>
-                  <Typography variant="h4" sx={{ fontSize: isMdUp ? "14px !important" : "12px !important" }}>: {dateFormat &&
+                  {/* <Typography variant="h4" sx={{ fontSize: isMdUp ? "14px !important" : "12px !important" }}>: {dateFormat &&
                     Businessunitlist?.Created_Date &&
                     format(new Date(Businessunitlist?.Created_Date), dateFormat)
-                    || Businessunitlist?.Created_Date}</Typography>
+                    || Businessunitlist?.Created_Date}</Typography> */}
                   <Typography variant="h4" sx={{ fontSize: isMdUp ? "14px !important" : "12px !important" }}>: {Businessunitlist?.Partner_Id} </Typography>
                   <Typography variant="h4" sx={{ fontSize: isMdUp ? "14px !important" : "12px !important" }}>: {Businessunitlist?.Partner_Name}</Typography>
                   <Typography variant="h4" sx={{ fontSize: isMdUp ? "14px !important" : "12px !important" }}>: {Businessunitlist?.HeadOf_Operation} </Typography>

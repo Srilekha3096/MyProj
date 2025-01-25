@@ -6,7 +6,7 @@ import { CellNoborder } from '../../pages/TableStyled';
 import commonServices from 'app/services/common-services';
 import axios from 'axios';
 import { BASE_URL } from 'app/services/auth-services';
-import { format } from 'date-fns';
+//import { format } from 'date-fns';
 import { handleError } from 'app/pages/auth-pages/login/AuthGuard';
 import settingServices from 'app/services/setting-api-services';
 import { todayDate } from './DateFormatter';
@@ -43,7 +43,7 @@ export const UpdatedHistoryRecords = ({ documentId, scrollHeight }) => {
                             console.log("datadata", data)
                             return (
                                 <TableRow>
-                                    <CellNoborder sx={{ minWidth: { xs: "auto", md: "200px !important" } }} data-title="Activity Date">
+                                    {/* <CellNoborder sx={{ minWidth: { xs: "auto", md: "200px !important" } }} data-title="Activity Date">
                                         {dateFormat && data?.Updated_Date && format(
                                             new Date(data?.Updated_Date),
                                             dateFormat
@@ -51,7 +51,7 @@ export const UpdatedHistoryRecords = ({ documentId, scrollHeight }) => {
                                         <span style={{ marginLeft: "5px" }}>
                                             {data?.Updated_Time?.slice(0, 8)}
                                         </span>
-                                    </CellNoborder>
+                                    </CellNoborder> */}
                                     <CellNoborder sx={{ minWidth: { xs: "auto", md: "200px !important" } }} data-title="PR No">
                                         {data?.Document_Id ? data?.Document_Id : ""}
                                     </CellNoborder>

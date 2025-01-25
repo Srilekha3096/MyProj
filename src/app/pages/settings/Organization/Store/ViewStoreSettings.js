@@ -21,7 +21,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { MdClose } from "react-icons/md";
 import { TabContext, TabList, TabPanel } from "@mui/lab";
-import { format } from "date-fns";
+//import { format } from "date-fns";
 import { formatIndianNumber } from "app/shared/ReuseComponents/DateFormatter";
 import HistoryOverview from "app/shared/ReuseComponents/HistoryOverview";
 
@@ -324,13 +324,13 @@ const ViewStoreSettings = ({
                                     <Typography variant="h4" sx={{ fontSize: isMdUp ? "14px !important" : "12px !important" }}>
                                         : {currentData?.Own_Partner || "-"}
                                     </Typography>
-                                    <Typography variant="h4" sx={{ fontSize: isMdUp ? "14px !important" : "12px !important" }}>
+                                    {/* <Typography variant="h4" sx={{ fontSize: isMdUp ? "14px !important" : "12px !important" }}>
                                         : {dateFormat &&
                                             currentData &&
                                             currentData?.Created_Date &&
                                             format(new Date(currentData?.Created_Date), dateFormat) || currentData?.Created_Date
                                         }
-                                    </Typography>
+                                    </Typography> */}
                                     <Typography variant="h4" sx={{ fontSize: isMdUp ? "14px !important" : "12px !important" }}>
                                         : {currentData?.Longitude || "-"}
                                     </Typography>
