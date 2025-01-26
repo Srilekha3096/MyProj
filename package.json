@@ -1,11 +1,12 @@
 {
-  "homepage": "https://Srilekha3096.github.io/",
+  "homepage": "https://Srilekha3096/github.io/MyProj",
   "name": "jumbo-react-6.x",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@ckeditor/ckeditor5-build-classic": "^38.1.1",
     "@ckeditor/ckeditor5-react": "^6.3.0",
+    "@date-io/date-fns-jalali": "^2.11.0",
     "@emotion/cache": "^11.7.1",
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
@@ -34,7 +35,7 @@
     "can-use-dom": "^0.1.0",
     "ckeditor4-react": "^2.1.1",
     "clsx": "^1.1.1",
-    "connected-react-router": "^6.9.3",
+    "connected-react-router": "^6.9.1",
     "convert-rupees-into-words": "^1.0.6",
     "country-state-city": "^3.1.2",
     "crypto": "^1.0.1",
@@ -42,6 +43,7 @@
     "crypto-js": "^4.1.1",
     "d3-org-chart": "^3.1.1",
     "date-fns": "^2.30.0",
+    "date-fns-jalali": "^2.27.0-0",
     "dayjs": "^1.11.11",
     "devextreme": "^23.2.4",
     "devextreme-react": "^23.2.9",
@@ -49,12 +51,14 @@
     "draft-js": "^0.11.7",
     "draftjs-to-html": "^0.9.1",
     "formik": "^2.2.9",
+    "gh-pages": "^6.3.0",
     "history": "^4.10.1",
     "html-react-parser": "^5.1.10",
     "html2canvas": "^1.4.1",
     "html2pdf.js": "^0.10.1",
     "i18next": "^21.6.14",
     "i18next-http-backend": "^1.4.0",
+    "install": "^0.13.0",
     "isomorphic-fetch": "^3.0.0",
     "js-cookie": "^3.0.1",
     "json2mq": "^0.2.0",
@@ -138,9 +142,9 @@
     "yup": "^0.32.11"
   },
   "scripts": {
-    "start": "react-scripts --max_old_space_size=8192 start",
     "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "deploy":"gh-pages -d dist",
+    "start": "react-scripts --max_old_space_size=8192 start",
     "build": "react-scripts --max_old_space_size=8192 build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -178,6 +182,6 @@
     "redux-devtools-extension": "^2.13.9"
   },
   "packageManager": "yarn@1.22.5",
-  "proxy": "https://admin.test.co.in",
+  "proxy": "https://admin.ineedgig.co.in",
   "main": "index.js"
 }
